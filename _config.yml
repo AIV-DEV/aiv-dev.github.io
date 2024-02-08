@@ -1,7 +1,7 @@
-title: Your awesome title
-name: Your Name
-email: your-email@example.com
-description: Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
+title: A.I.V Dev
+name: Ashi Vered
+email: ashivered.apps@gmail.com
+description: My name is Ashi Vered. I live in Israel, an activist of the Noam party, and a developer - mainly an Android developer (apps and custom ROMs). In my blog I share my experiences and thoughts as a developer and as a person.
 
 baseurl: "/blog"
 url: ""
@@ -11,14 +11,14 @@ display_footer: inital  #change this to 'none' if you want to hide the footer co
 parallax_image_one: assets/images/startup3.jpg # These are the images used for the parallax background
 parallax_image_two: assets/images/startup3.jpg
 
-project_one: "First Project"
-project_one_description: Describe your project!
-project_one_url: https://github.com/jameshamann/jekyll-material-theme
+project_one: "SkyOS"
+project_one_description: SkyOS is a custom ROM for Nokia 800 Tough. The ROM is designed to improve speed and user experience. It's based on v40 firmware and it is now in the public alpha phase (0.1).
+project_one_url: https://github.com/AshiVered/SkyOS
 project_one_icon: location_on
 
-project_two: Second Project
-project_two_description: Describe your project!
-project_two_url: https://github.com/jameshamann/jekyll-material-theme
+project_two: "CobaltTranscriber"
+project_two_description: CobaltTranscriber is a simple tool to make using FasterWhisper easier. This is a pre-alpha release, because I hope to write real GUI software at some point, and the script is the result of work to get familiar with the tool.
+project_two_url: https://github.com/AshiVered/Cobalt-Scripts/tree/main/CobaltTranscriber
 project_two_icon: photo_camera
 
 
@@ -40,118 +40,35 @@ syntax_highlighting: true
 # Skill icons from https://konpa.github.io/devicon/
 
 skills:
-  - name: amazonwebservices
   - name: android
-  - name: angularjs
-  - name: apache
-  - name: appcelerator
-  - name: apple
-  - name: atom
-  - name: babel
-  - name: backbonejs
-  - name: bitbucket
-  - name: bootstrap
-  - name: bower
-  - name: c
-  - name: chrome
-  - name: codeigniter
-  - name: coffescript
-  - name: confluence
-  - name: cplusplus
-  - name: csharp
-  - name: css3
-  - name: cucumber
-  - name: d3js
-  - name: debian
-  - name: devicon
-  - name: django
-  - name: docker
-  - name: doctrine
-  - name: dot-net
-  - name: drupal
-  - name: erlang
-  - name: facebook
-  - name: firefox
-  - name: foundation
-  - name: gatling
-  - name: gimp
+  - name: edge
+    uri: https://upload.wikimedia.org/wikipedia/commons/f/f6/Edge_Logo_2019.svg
   - name: git
   - name: github
-  - name: gitlab
-  - name: go
-  - name: google
   - name: gradle
-  - name: grunt
-  - name: gulp
-  - name: heroku
-  - name: html5
-  - name: ie10
-  - name: illustrator
-  - name: inkscape
-  - name: itellij
   - name: java
-  - name: jasmine
-  - name: javascript
-  - name: laravel
-  - name: less
   - name: linux
-  - name: meteor
-  - name: mocha
-  - name: mongodb
-  - name: moodle
-  - name: mysql
-  - name: nginx
-  - name: nodejs
-  - name: nodewebkit
-  - name: oracle
-  - name: photoshop
-  - name: php
-  - name: phpstorm
-  - name: protractor
-  - name: postgresql
   - name: python
   - name: pycharm
-  - name: rails
-  - name: react
-  - name: redhat
-  - name: redis
-  - name: ruby
-  - name: rubymine
-  - name: safari
-  - name: sass
-  - name: sequelize
-  - name: slack
-  - name: sourcetree
-  - name: ssh
-  - name: swift
-  - name: symfony
-  - name: tomcat
-  - name: travis
-  - name: trello
-  - name: twitter
-  - name: typescript
-  - name: ubuntu
-  - name: vim
   - name: visualstudio
-  - name: vuejs
-  - name: webpack
-  - name: webstorm
+  - name: lineageos
   - name: windows8
   - name: wordpress
-  - name: yii
-  - name: zend
+  - name: android studio
+    uri: https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Android_Studio_Logo_%282023%29.svg/1024px-Android_Studio_Logo_%282023%29.svg.png
+
 
 icon_size: 50 # font-size of icons in px
 colored: colored # Leave blank for black and white icons
 
 project_button: Github
 
-github: https://github.com/jameshamann/jekyll-material-theme
-medium: https://medium.com
+github: https://github.com/AshiVered
+XDA: https://xdaforums.com/m/a9381.11833283/
+MITM: https://mitmachim.top/user/%D7%9E%D7%99%D7%A9%D7%94%D7%9512
 
 baseurl: # if your site is located at /blog or /home, enter it here, otherwise leave it empty
 url: http://localhost:4000/ #the url of your site
-
 # Google tracking, if both are filled, tag manager will prevail. Set up GA through GTM in that case
 tag_manager_id: # This looks something like GTM-XXXXXXX
 google_analytics_tracking_id: # This looks something like UA-000000000-0 Head over to https://analytics.google.com/ to setup.
