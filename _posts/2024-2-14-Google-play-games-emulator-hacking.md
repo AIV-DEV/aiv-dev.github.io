@@ -11,17 +11,22 @@ I tried to sideload apps and other hacks for this emulator.
 ### 1 - installation
 
 Download the Google Play Games on PC Developer Emulator (we use the developer version to be able to use ADB).
-https://developer.android.com/games/playgames/emulator
-Install the software. At the end of the installation, a tab will open in the browser (on PC)to connect to the Google account. Log in to your account - this is the account that will appear in the emulator.
+
+[https://developer.android.com/games/playgames/emulator](https://developer.android.com/games/playgames/emulator)
+
+Install the software. At the end of the installation, a tab will open in the browser (on PC) to connect to the Google account. Log in to your account - this is the account that will appear in the emulator.
 After that, a dialog will pop up to confirm debugging on the emulator. confirm it.
 
 ### 2 - Sideloading
 
 Now, we will sideload apps using ADB.
 ADB is in this path
+
 `C:\Program Files\Google\Play Games Developer Emulator\current\emulator`
+
 (Regular ADB may also work, I haven't tried)
 Installing APK files is possible by opening CMD in the above path and running the command
+
 `adb install /path/to/your.apk`
 
 ### 3 - App store
@@ -41,7 +46,9 @@ That's why you need to install through the shell. But... we don't have root. (at
 
 So we will use [Shizuku](https://shizuku.rikka.app/) (an application that allows running a shell through the device even without root. You can read about it online).
 Install it, open it, and run the following command in adb
+
 `adb shell sh /sdcard/Android/data/moe.shizuku.privileged.api/start.sh`
+
 We need to get an output like this
 ![_config.yml]({{ site.baseurl }}/assets/images/playgames5.png)
 
@@ -57,7 +64,9 @@ Amazing! Now it will work 😊.
 I was not able to root the emulator at the moment.
 Attached is the information I currently have:
 The boot.img is inside the aggregate.img file in the path
-C:\Program Files\Google\Play Games Developer Emulator\current\emulator\avd
+
+`C:\Program Files\Google\Play Games Developer Emulator\current\emulator\avd`
+
 I tried to root the whole file with Magisk 27 and this is the error
 ![_config.yml]({{ site.baseurl }}/assets/images/playgames7.png)
 
