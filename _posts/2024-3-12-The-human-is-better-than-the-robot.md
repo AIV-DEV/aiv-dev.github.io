@@ -1,6 +1,6 @@
 ---
 layout: post
-title: The-human-is-better-than-the-robot?
+title: The human is better than the robot?
 ---
 
 Does a human have priority over AI?
