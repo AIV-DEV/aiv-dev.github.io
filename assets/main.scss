@@ -10,3 +10,45 @@ $spacing-unit:     30px !default;
 }
 
 @import "syntax-highlighting";
+
+/* עיצוב אחיד לכרטיסי הפוסטים בבלוג */
+.blog-card {
+    display: flex;
+    flex-direction: column;
+    height: 450px; /* גובה כולל לכרטיס - תוכל לשנות לפי הטעם */
+}
+
+.blog-card .card-image {
+    height: 200px; /* גובה אחיד לתמונות */
+    overflow: hidden;
+}
+
+.blog-card .card-image img {
+    height: 100%;
+    object-fit: cover; /* מבטיח שהתמונה לא תתעוות */
+}
+
+.blog-card .card-content {
+    flex-grow: 1;
+    position: relative;
+    overflow: hidden;
+    height: 150px; /* גובה הטקסט */
+    padding-bottom: 40px; /* מרווח לאפקט ההתפוגגות */
+}
+
+/* אפקט ההתפוגגות (Fade Out) */
+.blog-card .card-content::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background: linear-gradient(transparent, white);
+    pointer-events: none; /* מאפשר ללחוץ על קישורים מתחת לגרדיאנט */
+}
+
+.blog-card .card-content p {
+    margin: 0;
+    color: black;
+}
