@@ -12,27 +12,29 @@ $spacing-unit:     30px !default;
 @import "syntax-highlighting";
 
 /* גובה אחיד לכרטיסים בבלוג */
+/* הגדרת הכרטיס כולו */
 .blog-feed-card {
-    height: 40px !important; /* גובה קבוע לכל הריבועים */
-    overflow: hidden;
+    height: 200px !important; /* זה הגובה הממוצע האחיד. שנה לכל מספר שתרצה */
+    overflow: hidden !important; /* קריטי: זה מה שמונע מהטקסט לצאת החוצה */
     display: flex;
     flex-direction: column;
 }
 
-.blog-feed-card .card-content {
+/* הגדרת אזור הטקסט וההתפוגגות */
+.post-content-area {
     position: relative;
     flex-grow: 1;
-    overflow: hidden;
+    overflow: hidden; /* חותך את הטקסט העודף */
 }
 
-/* אפקט התפוגגות לטקסט חורג */
-.blog-feed-card .card-content::after {
+/* אפקט ההתפוגגות (Fade Out) */
+.post-content-area::after {
     content: "";
     position: absolute;
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 50px;
+    height: 60px; /* גובה אזור הטשטוש */
     background: linear-gradient(transparent, white);
     pointer-events: none;
 }
