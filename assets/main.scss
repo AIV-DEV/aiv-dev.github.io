@@ -11,16 +11,22 @@ $spacing-unit:     30px !default;
 
 @import "syntax-highlighting";
 
-/* תיקון גובה אחיד לכרטיסיות הפוסטים ואפקט התפוגגות לטקסט */
-.mdl-card { 
-    height: 320px !important; 
+/* תיקון גובה אחיד לכרטיסיות הפוסטים בבלוג ואפקט התפוגגות לטקסט */
+#blog .card {
+    height: 350px !important; /* גובה ממוצע אחיד לכל הריבועים של הפוסטים */
     display: flex !important;
     flex-direction: column !important;
 }
 
-.mdl-card__supporting-text {
+#blog .card .card-content {
     flex-grow: 1 !important;
     overflow: hidden !important;
-    -webkit-mask-image: linear-gradient(to bottom, black 65%, transparent 100%);
-    mask-image: linear-gradient(to bottom, black 65%, transparent 100%);
+    /* אפקט ההתפוגגות לטקסט שחורג מהגבולות */
+    -webkit-mask-image: linear-gradient(to bottom, black 60%, transparent 100%);
+    mask-image: linear-gradient(to bottom, black 60%, transparent 100%);
+}
+
+#blog .card .card-action {
+    /* דוחף את אזור הקישור (Read more) תמיד לתחתית הריבוע */
+    margin-top: auto !important;
 }
