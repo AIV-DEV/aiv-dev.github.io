@@ -10,23 +10,3 @@ $spacing-unit:     30px !default;
 }
 
 @import "syntax-highlighting";
-
-/* גובה אחיד לכרטיסיות הבלוג ואפקט התפוגגות לטקסט */
-#blog .card {
-    height: 350px !important; /* גובה ממוצע אחיד - ניתן לשחק עם המספר */
-    display: flex !important;
-    flex-direction: column !important;
-
-    .card-content {
-        flex-grow: 1 !important;
-        overflow: hidden !important;
-        /* אפקט התפוגגות / Fade-out לטקסט ארוך */
-        -webkit-mask-image: linear-gradient(to bottom, black 65%, transparent 100%);
-        mask-image: linear-gradient(to bottom, black 65%, transparent 100%);
-    }
-
-    .card-action {
-        /* קיבוע אזור הקישור בתחתית בדיוק */
-        margin-top: auto !important; 
-    }
-}
