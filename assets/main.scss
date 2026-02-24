@@ -19,6 +19,16 @@ $spacing-unit:     30px !default;
     display: flex;
     flex-direction: column;
     position: relative;
+    border-radius: 16px !important; /* פינות מעוגלות יפות */
+    border: none !important; /* הסרת מסגרת אם קיימת */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1) !important; /* הצללה בסיסית עדינה */
+    transition: all 0.3s ease-in-out !important; /* אנימציה חלקה לשינויים */
+}
+/* אפקט במעבר עכבר (Hover) */
+.blog-feed-card:hover {
+    background-color: #ffffff; /* נשמור על רקע לבן */
+    transform: translateY(-5px); /* הקוביה עולה מעט למעלה */
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15) !important; /* הצללה עמוקה יותר שנותנת תחושת גובה */
 }
 
 /* הגדרת אזור הטקסט וההתפוגגות */
