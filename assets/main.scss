@@ -14,7 +14,7 @@ $spacing-unit:     30px !default;
 /* גובה אחיד לכרטיסים בבלוג */
 /* הגדרת הכרטיס כולו */
 .blog-feed-card {
-    height: 150px !important; /* זה הגובה הממוצע האחיד. שנה לכל מספר שתרצה */
+    height: 200px !important; /* זה הגובה הממוצע האחיד. שנה לכל מספר שתרצה */
     overflow: hidden !important; /* קריטי: זה מה שמונע מהטקסט לצאת החוצה */
     display: flex;
     flex-direction: column;
