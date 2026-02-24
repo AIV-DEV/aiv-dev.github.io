@@ -14,15 +14,11 @@ $spacing-unit:     30px !default;
 /* גובה אחיד לכרטיסים בבלוג */
 /* הגדרת הכרטיס כולו */
 .blog-feed-card {
-    height: 200px !important; /* זה הגובה הממוצע האחיד. שנה לכל מספר שתרצה */
+    height: 300px !important; /* זה הגובה הממוצע האחיד. שנה לכל מספר שתרצה */
     overflow: hidden !important; /* קריטי: זה מה שמונע מהטקסט לצאת החוצה */
     display: flex;
     flex-direction: column;
     position: relative;
-    border-radius: 16px !important; /* פינות מעוגלות יפות */
-    border: none !important; /* הסרת מסגרת אם קיימת */
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1) !important; /* הצללה בסיסית עדינה */
-    transition: all 0.3s ease-in-out !important; /* אנימציה חלקה לשינויים */
 }
 /* אפקט במעבר עכבר (Hover) */
 .blog-feed-card:hover {
