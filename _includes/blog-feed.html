@@ -4,11 +4,10 @@
     <div class="card blog-feed-card"> <!-- הוספתי קלאס blog-feed-card -->
       <div class="card-image">
         <img src="{{post.image}}">
-        <a id="{{post.url}}" class="btn-floating halfway-fab waves-effect waves-light red" href="{{ post.url | relative_url }}"><i class="material-icons">more_horiz</i></a>
       </div>
       <div class="card-content post-content-area"> <!-- הוספתי קלאס post-content-area -->
-        <span class="card-title"><a style="color:black">{{ post.title | escape }}</a></span>
-        <p><a style="color:black">{{post.excerpt}}</a></p> <!-- סגרתי כאן את ה-a שהיה חסר -->
+        <span class="card-title"><a href="{{ post.url | relative_url }}" class="stretched-link" style="color:black">{{ post.title | escape }}</a></span>
+        <p><a style="color:black">{{post.excerpt}}</a></p> 
       </div>
     </div>
   </div>
